@@ -14,7 +14,7 @@ module Refinery
         @inquiry = inquiry
         mail :subject => Refinery::Inquiries::Setting.notification_subject,
              :to      => Refinery::Inquiries::Setting.notification_recipients,
-             :from      => "\"#{Refinery::Core.site_name}\" <#{Refinery::Inquiries.inquiry_from_email}>",
+             :from      => "\"#{Refinery::Core.site_name}\" <#{Refinery::Inquiries.inquiry_from_email}>"
       end
 
     end
